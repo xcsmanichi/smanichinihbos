@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Yuzzu Kamiyaka">
+	<meta name="author" content="YuzzuKamiyaka">
+	<meta name="keywords" content="YuzzuKamiyaka, yuzzu-kamiyaka, bootstrap, yuzzu, kamiyaka, bootstrap 5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="shortcut icon" href="img/icons/icon-48x48.png" />
+
+	<link rel="canonical" href="https://demo-basic.adminkit.io/" />
+
+	<title>Website Apis - Yuzzu Kamiyaka</title>
+	
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link href="css/app.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> 
+    </script> 
+<audio autoplay="autoplay" hidden="hidden" src="https://e.top4top.io/m_2093ct1020.mp3"></audio>
+    <style>
+.alert {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+  opacity: 1;
+  transition: opacity 0.6s;
+  margin-bottom: 15px;
+}
+
+.alert.success {background-color: #04AA6D;}
+.alert.info {background-color: #2196F3;}
+.alert.warning {background-color: #ff9800;}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+    </style>
+</head>
+
+<body onload="getvisitor();">
+	<div class="wrapper">
+		<nav id="sidebar" class="sidebar js-sidebar">
+			<div class="sidebar-content js-simplebar">
+				<a class="sidebar-brand" href="index.html">
+          <span class="align-middle">Yuzzu Kamiyaka</span>
+        </a>
+
+				<ul class="sidebar-nav">
+					<li class="sidebar-header">
+						Pages
+					</li>
+
+					<li class="sidebar-item active">
+						<a class="sidebar-link" href="/home">
+              <i class="align-middle" data-feather="sliders"></i> <span class="align-middle">Dashboard</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="/profile">
+              <i class="align-middle" data-feather="user"></i> <span class="align-middle">Profile</span>
+            </a>
+					</li>
+
+					<li class="sidebar-header">
+						Tools & Components
+					</li>
+<!--
+Dari Sini Anying
+Anying Li Babi
+-->
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="/download">
+              <i class="align-middle" data-feather="download"></i> <span class="align-middle">Download </span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="/photooxy">
+              <i class="align-middle" data-feather="camera"></i> <span class="align-middle">Photo Oxy</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="/media">
+              <i class="align-middle" data-feather="link"></i> <span class="align-middle">Media </span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="/anime">
+              <i class="align-middle" data-feather="tv"></i> <span class="align-middle">Anime </span>
+            </a>
+					</li>
+					
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="/info">
+              <i class="align-middle" data-feather="radio"></i> <span class="align-middle">Info </span>
+            </a>
+					</li>
+					
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="/fun">
+              <i class="align-middle" data-feather="coffee"></i> <span class="align-middle">Fun </span>
+            </a>
+					</li>
+					
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="/baseenc">
+              <i class="align-middle" data-feather="lock"></i> <span class="align-middle">Encode & Decode </span>
+            </a>
+					</li>
+					
+					
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="/other">
+              <i class="align-middle" data-feather="folder"></i> <span class="align-middle">Other </span>
+            </a>
+					</li>
+					<li class="sidebar-header">
+						Direct Download
+					</li>
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="/tik-tok">
+              <i class="align-middle" data-feather="download"></i> <span class="align-middle">TikTok </span>
+            </a>
+					</li>
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="/instagram">
+              <i class="align-middle" data-feather="download"></i> <span class="align-middle">Instagram </span>
+            </a>
+					</li>
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="/twitter">
+              <i class="align-middle" data-feather="download"></i> <span class="align-middle">Twitter </span>
+            </a>
+					</li>
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="/ytmp4">
+              <i class="align-middle" data-feather="download"></i> <span class="align-middle">Youtube Mp4 </span>
+            </a>
+					</li>
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="/ytmp3">
+              <i class="align-middle" data-feather="download"></i> <span class="align-middle">Youtube Mp3 </span>
+            </a>
+					
+					</li>
+
+
+
+
+
+					<li class="sidebar-header">
+						Plugins & Addons
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="https://yuzzukamiyaka.github.io/">
+              <i class="align-middle" data-feather="terminal"></i> <span class="align-middle">Bot WhatsApp</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="https://wa.me/6281337541779">
+              <i class="align-middle" data-feather="info"></i> <span class="align-middle">About</span>
+            </a>
+					</li>
+				</ul>
+
+				<div class="sidebar-cta">
+					<div class="sidebar-cta-content">
+						<strong class="d-inline-block mb-2">Upgrade to Pro</strong>
+						<div class="mb-3 text-sm">
+							Are you looking for more components? Check out our premium version.
+						</div>
+						<div class="d-grid">
+							<a href="https://wa.me/6281337541779" class="btn btn-primary">Upgrade to Pro</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<div class="main">
+			<nav class="navbar navbar-expand navbar-light navbar-bg">
+				<a class="sidebar-toggle js-sidebar-toggle">
+          <i class="hamburger align-self-center"></i>
+        </a>
+
+				<div class="navbar-collapse collapse">
+					<ul class="navbar-nav navbar-align">
+						<li class="nav-item dropdown">
+							<a class="nav-icon dropdown-toggle" href="#" id="alertsDropdown" data-bs-toggle="dropdown">
+								<div class="position-relative">
+									<i class="align-middle" data-feather="bell"></i>
+									<span class="indicator">2</span>
+								</div>
+							</a>
+							<div class="dropdown-menu dropdown-menu-lg dropdown-menu-end py-0" aria-labelledby="alertsDropdown">
+								<div class="dropdown-menu-header">
+									2 New Notifications
+								</div>
+								<div class="list-group">
+									<a href="#" class="list-group-item">
+										<div class="row g-0 align-items-center">
+											<div class="col-2">
+												<i class="text-danger" data-feather="alert-circle"></i>
+											</div>
+											<div class="col-10">
+												<div class="text-dark">Update completed</div>
+												<div class="text-muted small mt-1">Restart server heroku</div>
+												<div class="text-muted small mt-1">3 month ago</div>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="list-group-item">
+										<div class="row g-0 align-items-center">
+											<div class="col-2">
+												<i class="text-warning" data-feather="bell"></i>
+											</div>
+											<div class="col-10">
+												<div class="text-dark">Add Features</div>
+												<div class="text-muted small mt-1">Add 10 Features</div>
+												<div class="text-muted small mt-1">1 month ago</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="dropdown-menu-footer">
+									<span class="text-muted">Info</span>
+								</div>
+							</div>
+						</li>
+						
+						
+						<!-- Dancok -->
+						<li class="nav-item dropdown">
+							<a class="nav-icon dropdown-toggle" href="#" id="messagesDropdown" data-bs-toggle="dropdown">
+								<div class="position-relative">
+									<i class="align-middle" data-feather="message-square"></i>
+									<span class="indicator">3</span>
+								</div>
+							</a>
+							<div class="dropdown-menu dropdown-menu-lg dropdown-menu-end py-0" aria-labelledby="messagesDropdown">
+								<div class="dropdown-menu-header">
+									<div class="position-relative">
+										3 New Messages
+									</div>
+								</div>
+								<div class="list-group">
+									<a href="#" class="list-group-item">
+										<div class="row g-0 align-items-center">
+											<div class="col-2">
+												<img src="img/avatars/avatar-5.jpg" class="avatar img-fluid rounded-circle" alt="Vanessa Tucker">
+											</div>
+											<div class="col-10 ps-2">
+												<div class="text-dark">Angga</div>
+												<div class="text-muted small mt-1">Bagi apikey bang.</div>
+												<div class="text-muted small mt-1">15m ago</div>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="list-group-item">
+										<div class="row g-0 align-items-center">
+											<div class="col-2">
+												<img src="img/avatars/avatar-2.jpg" class="avatar img-fluid rounded-circle" alt="William Harris">
+											</div>
+											<div class="col-10 ps-2">
+												<div class="text-dark">Denis</div>
+												<div class="text-muted small mt-1">Bagi esce bot whatsapp bang.</div>
+												<div class="text-muted small mt-1">2h ago</div>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="list-group-item">
+										<div class="row g-0 align-items-center">
+											<div class="col-2">
+												<img src="img/avatars/avatar-6.jpg" class="avatar img-fluid rounded-circle" alt="Christina Mason">
+											</div>
+											<div class="col-10 ps-2">
+												<div class="text-dark">Selly</div>
+												<div class="text-muted small mt-1">Halo sayang, udah makan?.</div>
+												<div class="text-muted small mt-1">4h ago</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="dropdown-menu-footer">
+									<a href="#" class="text-muted">Messages</a>
+								</div>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-icon dropdown-toggle d-inline-block d-sm-none" href="#" data-bs-toggle="dropdown">
+                <i class="align-middle" data-feather="settings"></i>
+              </a>
+
+							<a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#" data-bs-toggle="dropdown">
+                <img src="img/avatars/avatar.jpg" class="avatar img-fluid rounded me-1" alt="Yuzzu" /> <span class="text-dark">Yuzzu</span>
+              </a>
+							<div class="dropdown-menu dropdown-menu-end">
+								<a class="dropdown-item" href="/profile"><i class="align-middle me-1" data-feather="user"></i> Profile</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="https://wa.me/6281337541779"><i class="align-middle me-1" data-feather="help-circle"></i> Help</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="/">Log out</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</nav>
+<div class="alert warning">
+  <span class="closebtn">&times;</span>  
+  <strong>Info!</strong> Website ini sedang dalam pengembangan, jadi sabar ya jangan ngebully :), subscribe juga channel gw <a style="color:white" href="https://youtube.com/c/YuzzuKamiyaka"><strong>Yuzzu Kamiyaka</strong></a>
+</div>
+		
+			<!-- ANU -->
+			<main class="content">
+				<div class="container-fluid p-0">
+
+					<h1 class="h3 mb-3"><strong>Dashboard</strong></h1>
+
+					<div class="row">
+						<div class="col-xl-6 col-xxl-5 d-flex">
+							<div class="w-100">
+								<div class="row">
+									<div class="col-sm-6">
+										<div class="card">
+											<div class="card-body">
+												<div class="row">
+													<div class="col mt-0">
+														<h5 class="card-title">Date Time</h5>
+													</div>
+
+													<div class="col-auto">
+														<div class="stat text-primary">
+															<i class="align-middle" data-feather="sun"></i>
+														</div>
+													</div>
+												</div>
+												<h1 class="mt-1 mb-3">
+												    <div class="time">
+												        <span id="jam">00</span>:<span id="menit">00</span>:<span id="detik">00</span>
+												    </div>
+												</h1>
+												<div class="mb-0">
+													<span class="text-danger"> <i class="mdi mdi-arrow-bottom-right"></i><div id="sayings">Ucapan</div></span>
+												</div>
+											</div>
+										</div>
+										<div class="card">
+											<div class="card-body">
+												<div class="row">
+													<div class="col mt-0">
+														<h5 class="card-title">Visitors</h5>
+													</div>
+
+													<div class="col-auto">
+														<div class="stat text-primary">
+															<i class="align-middle" data-feather="users"></i>
+														</div>
+													</div>
+												</div>
+												<h1 class="mt-1 mb-3"><div class="visitor" id="visitor">00</div></h1>
+												<div class="mb-0">
+													<span class="text-success"> <i class="mdi mdi-arrow-bottom-right"></i> 5.25% </span>
+													<span class="text-muted">Since last week</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="card">
+											<div class="card-body">
+												<div class="row">
+													<div class="col mt-0">
+														<h5 class="card-title">Your IP</h5>
+													</div>
+
+													<div class="col-auto">
+														<div class="stat text-primary">
+															<i class="align-middle" data-feather="wifi"></i>
+														</div>
+													</div>
+												</div>
+												<h1 class="mt-1 mb-3" id="gfg"></h1>
+												<div class="mb-0">
+													<span class="text-muted">Your Ip Address</span>
+												</div>
+											</div>
+										</div>
+										<div class="card">
+											<div class="card-body">
+												<div class="row">
+													<div class="col mt-0">
+														<h5 class="card-title">Features Info</h5>
+													</div>
+
+													<div class="col-auto">
+														<div class="stat text-primary">
+															<i class="align-middle" data-feather="bell"></i>
+														</div>
+													</div>
+												</div>
+												<h1 class="mt-1 mb-3"><span class="timer">0</span></h1>
+												<div class="mb-0">
+													<span class="text-muted">New Features</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					<div class="row">
+						<div class="col-12 col-lg-6">
+							<div class="card">
+								<div class="card-header">
+									<h5 class="card-title">Your Info</h5>
+								</div>
+								<div class="card-body">
+								    <div class="text-muted" id="device"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+						<div class="col-12 col-lg-4 col-xxl-3 d-flex">
+							<div class="card flex-fill w-100">
+								<div class="card-header">
+
+									<h5 class="card-title mb-0">Rules</h5>
+								</div>
+								<div class="card-body d-flex w-100">
+								    <div class="text-muted">
+ - Don't break our site!.<br>
+ - Report immediately if any tools are not working properly!<br>
+ - If you find a BUG on our site, you can immediately <a href="https://wa.me/6281337541779">Report</a> it.<br>
+ - It is strictly forbidden to steal/copy our templates!.<br>
+ - If there is a problem with our site, report it immediately, because your comfort is our top priority.<br>
+ - If you want to request tools or donate, you can contact us directly.<br>
+ </div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-12 col-lg-4 col-xxl-3 d-flex">
+							<div class="card flex-fill w-100">
+								<div class="card-header">
+
+									<h5 class="card-title mb-0">Contact Me</h5>
+								</div>
+								<div class="card-body d-flex w-100">
+								    <div class="text-muted">
+Hello, Everyone!<br>
+<ul>
+    <li>Found 1 or more bugs?</li>
+    <li>Request Features?</li>
+</ul>
+You can contact me via<br>
+<a class="text-muted" href="https://wa.me/6281337541779">
+<i class="fa fa-whatsapp"></i> WhatsApp
+</a><br>
+<a class="text-muted" href="https://instagram.com/bala.dasa_">
+<i class="fa fa-instagram"></i> Instagram
+</a>
+ </div>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+
+				</div>
+			</main>
+
+			<footer class="footer">
+				<div class="container-fluid">
+					<div class="row text-muted">
+					    <center>
+							<p class="mb-0">
+								<a class="text-muted" href="https://youtube.com/c/YuzzuKamiyaka" target="_blank"><center>COPYRIGHTS</center> &copy;<strong>YUZZU KAMIYAKA ALL RIGHTS RESERVED</strong></a>
+							
+							</p>
+							</center>
+					</div>
+				</div>
+			</footer>
+
+		</div>
+	</div>
+
+	<script src="js/app.js"></script>
+	   <script src="js/jquery.min.js"></script>
+	
+<script>
+var close = document.getElementsByClassName("closebtn");
+var i;
+
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function(){
+    var div = this.parentElement;
+    div.style.opacity = "0";
+    setTimeout(function(){ div.style.display = "none"; }, 600);
+  }
+}
+</script>
+
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			var ctx = document.getElementById("chartjs-dashboard-line").getContext("2d");
+			var gradient = ctx.createLinearGradient(0, 0, 0, 225);
+			gradient.addColorStop(0, "rgba(215, 227, 244, 1)");
+			gradient.addColorStop(1, "rgba(215, 227, 244, 0)");
+			// Line chart
+			new Chart(document.getElementById("chartjs-dashboard-line"), {
+				type: "line",
+				data: {
+					labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+					datasets: [{
+						label: "Sales ($)",
+						fill: true,
+						backgroundColor: gradient,
+						borderColor: window.theme.primary,
+						data: [
+							2115,
+							1562,
+							1584,
+							1892,
+							1587,
+							1923,
+							2566,
+							2448,
+							2805,
+							3438,
+							2917,
+							3327
+						]
+					}]
+				},
+				options: {
+					maintainAspectRatio: false,
+					legend: {
+						display: false
+					},
+					tooltips: {
+						intersect: false
+					},
+					hover: {
+						intersect: true
+					},
+					plugins: {
+						filler: {
+							propagate: false
+						}
+					},
+					scales: {
+						xAxes: [{
+							reverse: true,
+							gridLines: {
+								color: "rgba(0,0,0,0.0)"
+							}
+						}],
+						yAxes: [{
+							ticks: {
+								stepSize: 1000
+							},
+							display: true,
+							borderDash: [3, 3],
+							gridLines: {
+								color: "rgba(0,0,0,0.0)"
+							}
+						}]
+					}
+				}
+			});
+		});
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			// Pie chart
+			new Chart(document.getElementById("chartjs-dashboard-pie"), {
+				type: "pie",
+				data: {
+					labels: ["Chrome", "Firefox", "IE"],
+					datasets: [{
+						data: [4306, 3801, 1689],
+						backgroundColor: [
+							window.theme.primary,
+							window.theme.warning,
+							window.theme.danger
+						],
+						borderWidth: 5
+					}]
+				},
+				options: {
+					responsive: !window.MSInputMethodContext,
+					maintainAspectRatio: false,
+					legend: {
+						display: false
+					},
+					cutoutPercentage: 75
+				}
+			});
+		});
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			// Bar chart
+			new Chart(document.getElementById("chartjs-dashboard-bar"), {
+				type: "bar",
+				data: {
+					labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+					datasets: [{
+						label: "This year",
+						backgroundColor: window.theme.primary,
+						borderColor: window.theme.primary,
+						hoverBackgroundColor: window.theme.primary,
+						hoverBorderColor: window.theme.primary,
+						data: [54, 67, 41, 55, 62, 45, 55, 73, 60, 76, 48, 79],
+						barPercentage: .75,
+						categoryPercentage: .5
+					}]
+				},
+				options: {
+					maintainAspectRatio: false,
+					legend: {
+						display: false
+					},
+					scales: {
+						yAxes: [{
+							gridLines: {
+								display: false
+							},
+							stacked: false,
+							ticks: {
+								stepSize: 20
+							}
+						}],
+						xAxes: [{
+							stacked: false,
+							gridLines: {
+								color: "transparent"
+							}
+						}]
+					}
+				}
+			});
+		});
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			var markers = [{
+					coords: [31.230391, 121.473701],
+					name: "Shanghai"
+				},
+				{
+					coords: [28.704060, 77.102493],
+					name: "Delhi"
+				},
+				{
+					coords: [6.524379, 3.379206],
+					name: "Lagos"
+				},
+				{
+					coords: [35.689487, 139.691711],
+					name: "Tokyo"
+				},
+				{
+					coords: [23.129110, 113.264381],
+					name: "Guangzhou"
+				},
+				{
+					coords: [40.7127837, -74.0059413],
+					name: "New York"
+				},
+				{
+					coords: [34.052235, -118.243683],
+					name: "Los Angeles"
+				},
+				{
+					coords: [41.878113, -87.629799],
+					name: "Chicago"
+				},
+				{
+					coords: [51.507351, -0.127758],
+					name: "London"
+				},
+				{
+					coords: [40.416775, -3.703790],
+					name: "Madrid "
+				}
+			];
+			var map = new jsVectorMap({
+				map: "world",
+				selector: "#world_map",
+				zoomButtons: true,
+				markers: markers,
+				markerStyle: {
+					initial: {
+						r: 9,
+						strokeWidth: 7,
+						stokeOpacity: .4,
+						fill: window.theme.primary
+					},
+					hover: {
+						fill: window.theme.primary,
+						stroke: window.theme.primary
+					}
+				},
+				zoomOnScroll: false
+			});
+			window.addEventListener("resize", () => {
+				map.updateSize();
+			});
+		});
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			var date = new Date(Date.now() - 5 * 24 * 60 * 60 * 1000);
+			var defaultDate = date.getUTCFullYear() + "-" + (date.getUTCMonth() + 1) + "-" + date.getUTCDate();
+			document.getElementById("datetimepicker-dashboard").flatpickr({
+				inline: true,
+				prevArrow: "<span title=\"Previous month\">&laquo;</span>",
+				nextArrow: "<span title=\"Next month\">&raquo;</span>",
+				defaultDate: defaultDate
+			});
+		});
+	</script>
+<script type="text/javascript">
+
+Sayings = "";
+
+			var now = new Date();			var hours = now.getHours();
+
+			if (hours >= 16 && hours <= 17){
+
+			Sayings += "<span class='text-success'>Waktunya Sholat Maghrib</span>"
+
+			} else if (hours >= 18 || hours <= 2){
+
+			Sayings += "<span class='text-success'>Selamat Malam</span>"
+
+			} else if (hours >= 3 && hours <= 10){
+
+			Sayings += "<span class='text-success'>Selamat Pagi</span>"
+
+			} else if (hours >= 11 && hours <= 14){
+
+			Sayings += "<span class='text-success'>Selamat Siang</span>"
+
+			} else if (hours >= 13 && hours <= 15){
+
+			Sayings += "<span class='text-success'>Selamat Sore</span>"
+
+			}
+
+document.getElementById("sayings").innerHTML = Sayings 
+window.setTimeout("waktu()", 1000);
+
+ 
+
+	function waktu() {
+
+		var waktu = new Date();
+
+		setTimeout("waktu()", 1000);
+
+		document.getElementById("jam").innerHTML = waktu.getHours();
+
+		document.getElementById("menit").innerHTML = waktu.getMinutes();
+
+		document.getElementById("detik").innerHTML = waktu.getSeconds();
+
+	}
+	
+	var textWrapper = document.querySelector('.ml2');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml2 .letter',
+    scale: [4,1],
+    opacity: [0,1],
+    translateZ: 0,
+    easing: "easeOutExpo",
+    duration: 950,
+    delay: (el, i) => 70*i
+  }).add({
+    targets: '.ml2',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+
+    </script>
+
+    <script> 
+        /* Add "https://api.ipify.org?format=json" statement 
+
+           this will communicate with the ipify servers in 
+
+           order to retrieve the IP address $.getJSON will 
+
+           load JSON-encoded data from the server using a 
+
+           GET HTTP request */
+        $.getJSON("https://api.ipify.org?format=json", 
+            function(data) { 
+            // Setting text of element P with id gfg 
+            $("#gfg").html(data.ip); 
+        }) 
+    </script> 
+    
+    <script type="text/javascript">
+txt = "<span>Browser CodeName: " + navigator.appCodeName + + navigator.appName + "</span><br>";
+txt+= "<span>Browser Name: " + navigator.appName + "</span><br>";
+txt+= "<span>Browser Version: " + navigator.appVersion + "</span><br>";
+txt+= "<span>Cookies Enabled: " + navigator.cookieEnabled + "</span><br>";
+txt+= "<span>Platform: " + navigator.platform + "</span><br>";
+txt+= "<span>User-agent header: " + navigator.userAgent + "</span><br>";
+document.getElementById("Browserinfo").innerHTML=txt;
+</script>
+
+<script type="text/javascript">
+    (function () {
+    'use strict';
+    
+    var module = {
+        options: [],
+        header: [navigator.platform, navigator.userAgent, navigator.appVersion, navigator.vendor, window.opera],
+        dataos: [
+            { name: 'Windows Phone', value: 'Windows Phone', version: 'OS' },
+            { name: 'Windows', value: 'Win', version: 'NT' },
+            { name: 'iPhone', value: 'iPhone', version: 'OS' },
+            { name: 'iPad', value: 'iPad', version: 'OS' },
+            { name: 'Kindle', value: 'Silk', version: 'Silk' },
+            { name: 'Android', value: 'Android', version: 'Android' },
+            { name: 'PlayBook', value: 'PlayBook', version: 'OS' },
+            { name: 'BlackBerry', value: 'BlackBerry', version: '/' },
+            { name: 'Macintosh', value: 'Mac', version: 'OS X' },
+            { name: 'Linux', value: 'Linux', version: 'rv' },
+            { name: 'Palm', value: 'Palm', version: 'PalmOS' }
+        ],
+        databrowser: [
+            { name: 'Chrome', value: 'Chrome', version: 'Chrome' },
+            { name: 'Firefox', value: 'Firefox', version: 'Firefox' },
+            { name: 'Safari', value: 'Safari', version: 'Version' },
+            { name: 'Internet Explorer', value: 'MSIE', version: 'MSIE' },
+            { name: 'Opera', value: 'Opera', version: 'Opera' },
+            { name: 'BlackBerry', value: 'CLDC', version: 'CLDC' },
+            { name: 'Mozilla', value: 'Mozilla', version: 'Mozilla' }
+        ],
+        init: function () {
+            var agent = this.header.join(' '),
+                os = this.matchItem(agent, this.dataos),
+                browser = this.matchItem(agent, this.databrowser);
+            
+            return { os: os, browser: browser };
+        },
+        matchItem: function (string, data) {
+            var i = 0,
+                j = 0,
+                html = '',
+                regex,
+                regexv,
+                match,
+                matches,
+                version;
+            
+            for (i = 0; i < data.length; i += 1) {
+                regex = new RegExp(data[i].value, 'i');
+                match = regex.test(string);
+                if (match) {
+                    regexv = new RegExp(data[i].version + '[- /:;]([\\d._]+)', 'i');
+                    matches = string.match(regexv);
+                    version = '';
+                    if (matches) { if (matches[1]) { matches = matches[1]; } }
+                    if (matches) {
+                        matches = matches.split(/[._]+/);
+                        for (j = 0; j < matches.length; j += 1) {
+                            if (j === 0) {
+                                version += matches[j] + '.';
+                            } else {
+                                version += matches[j];
+                            }
+                        }
+                    } else {
+                        version = '0';
+                    }
+                    return {
+                        name: data[i].name,
+                        version: parseFloat(version)
+                    };
+                }
+            }
+            return { name: 'unknown', version: 0 };
+        }
+    };
+    
+    var e = module.init(),
+        debug = '';
+    
+    debug += 'Os Name: ' + e.os.name + '<br/>';
+    debug += 'Os Version: ' + e.os.version + '<br/>';
+    debug += 'Browser Name: ' + e.browser.name + '<br/>';
+    debug += 'Browser Version: ' + e.browser.version + '<br/>';
+    
+    debug += '<br/>';
+    debug += 'Navigator UserAgent: ' + navigator.userAgent + '<br/>';
+    debug += 'Navigator AppVersion: ' + navigator.appVersion + '<br/>';
+    debug += 'Navigator Platform: ' + navigator.platform + '<br/>';
+    debug += 'Navigator Vendor: ' + navigator.vendor + '<br/>';
+    
+    document.getElementById('device').innerHTML = debug;
+}());
+</script>
+
+<script>
+  function getvisitor(){
+              var xhr = new XMLHttpRequest();
+              var url = 'https://api.countapi.xyz/hit/osonesu.github.io./visits';
+              xhr.onloadend = function(){
+             data = JSON.parse(this.responseText);
+  document.getElementById("visitor").textContent = data.value
+              };
+              xhr.open("GET", url, true);
+              xhr.send();
+  }
+ 
+ </script>
+ 
+<script>
+   var countDownDate = new Date("June 5, 2022 11:27:15").getTime();
+   var timeClear = setInterval(function() {
+      var now = new Date().getTime();
+      var timeLeft = countDownDate - now;
+      var days = Math.floor(timeLeft / (  3500 * 60 * 60 * 24));
+      var hours = Math.floor(
+         (timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+      );
+      var minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+      document.querySelector(".timer").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+      if (timeLeft < 0) {
+         clearInterval(timeClear);
+         document.querySelector(".timer").innerHTML = "Timer Finished";
+      }
+   }, 1000);
+</script>
+
+</body>
+
+</html>
