@@ -1075,29 +1075,6 @@ router.get("/darkjokes", async (req, res, next) => {
     });
 });
 
-router.get("/simi", async (req, res, next) => {
-  text = req.query.text;
-  if (!text)
-    return res.json({
-      status: false,
-      creator: `${creator}`,
-      message: "masukan parameter text",
-    });
-
-  fetch(encodeURI(`https://api.simsimi.net/v2/?text=${text}&lc=id`))
-    .then((response) => response.json())
-    .then((data) => {
-      var result = data.success;
-      res.json({
-        author: `${creator}`,
-        result,
-      });
-    })
-    .catch((e) => {
-      res.json(errer.error);
-    });
-});
-
 router.get("/caklontong", async (req, res, next) => {
   fetch(encodeURI(`https://raw.githubusercontent.com/Xorizn/database-api/main/fun/caklontong.json`))
     .then((response) => response.json())
