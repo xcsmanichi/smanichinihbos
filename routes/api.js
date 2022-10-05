@@ -1517,6 +1517,22 @@ router.get('/waifu', async (req, res, next) => {
           res.json(errer.error)
 })
 })
+router.get('/googleimage', async (req, res, next) => {
+    judul = req.query.judul
+    if (!judul) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter judul"})
+        gis(`${judul}`, logResults);
+        function logResults(error, result){
+            if (error){
+                res.json(errer.error);
+            } else {
+                var hasil = JSON.stringify(results, null, '  ')
+                res.json({
+                    author: `${creator}`,
+                    hasil
+                })
+            }
+        }
+})
 router.get('/googlesearch', async (req, res, next) => {
     judul = req.query.judul
     if (!judul) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter judul"})
